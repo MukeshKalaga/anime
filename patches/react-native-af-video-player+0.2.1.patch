@@ -1,0 +1,26 @@
+diff --git a/node_modules/react-native-af-video-player/components/Time.js b/node_modules/react-native-af-video-player/components/Time.js
+index 01be913..9e847ac 100644
+--- a/node_modules/react-native-af-video-player/components/Time.js
++++ b/node_modules/react-native-af-video-player/components/Time.js
+@@ -32,7 +32,7 @@ class Time extends Component {
+   render() {
+     return (
+       <View style={styles.container}>
+-        <Text style={{ color: this.props.theme }}>{this.getTime(parseInt(this.props.time, 10))}</Text>
++        <Text style={{ color: this.props.theme.iconColor }}>{this.getTime(parseInt(this.props.time, 10))}</Text>
+       </View>
+     )
+   }
+diff --git a/node_modules/react-native-af-video-player/components/Video.js b/node_modules/react-native-af-video-player/components/Video.js
+index 258171b..ae7cfd6 100644
+--- a/node_modules/react-native-af-video-player/components/Video.js
++++ b/node_modules/react-native-af-video-player/components/Video.js
+@@ -318,7 +318,7 @@ class Video extends Component {
+         <Icons
+           name="replay"
+           size={60}
+-          color={this.props.theme}
++          color={this.props.theme.iconColor}
+           onPress={() => this.setState({ renderError: false })}
+         />
+       </Animated.View>
