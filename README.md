@@ -1,4 +1,4 @@
-# Anime
+# Anime (Not Working)
 
 ### A React Native app to watch anime without ads
 
